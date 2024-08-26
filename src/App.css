@@ -1,0 +1,144 @@
+/* src/App.css */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-right: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h2, .sidebar select, .sidebar button {
+  color: #e0e0e0;
+}
+
+.sidebar select, .sidebar button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #333;
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #e0e0e0;
+}
+
+.board-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 5px;
+  margin: 20px 0;
+}
+
+.row {
+  display: contents;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+.cell.selected {
+  background-color: #333;
+}
+
+.move-options {
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+}
+
+.move-options button {
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #333;
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+.move-history {
+  flex: 1;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  overflow-y: auto;
+}
+
+.move-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.move-history li {
+  padding: 5px 0;
+  border-bottom: 1px solid #333;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.footer a {
+    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.footer a:hover {
+    color: #333; /* LinkedIn blue */
+}
+
+.footer .spacer {
+  margin-top: 10px; /* Add space between text and links */
+  display: block;
+}
