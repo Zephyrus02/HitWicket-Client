@@ -11,7 +11,7 @@ function App() {
 	const [possibleMoves, setPossibleMoves] = useState([]);
 
 	useEffect(() => {
-		const wsInstance = new WebSocket("ws://localhost:9000");
+		const wsInstance = new WebSocket("ws://localhost:8080");
 		setWs(wsInstance);
 
 		wsInstance.onmessage = (event) => {
